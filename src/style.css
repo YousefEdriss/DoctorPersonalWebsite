@@ -1110,7 +1110,8 @@ ul { list-style: none; }
 @media (max-width: 768px) {
 
   /* — Navbar — */
-  .navbar { padding: 0 20px; position: relative; }
+  .navbar { padding: 0 20px; position: relative; height: 90px; }
+  .navbar__logo-img { height: 65px; max-width: 160px; }
   .navbar__hamburger { display: block; }
   .navbar__links {
     display: none;
