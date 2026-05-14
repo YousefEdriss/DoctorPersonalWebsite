@@ -1094,3 +1094,126 @@ ul { list-style: none; }
   transition: color 0.2s;
 }
 .footer__links a:hover { color: white; }
+
+/* ============================================================
+   HAMBURGER (hidden on desktop)
+   ============================================================ */
+.navbar__hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #0D1B2A;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+}
+
+/* ============================================================
+   MOBILE  ≤ 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* — Navbar — */
+  .navbar { padding: 0 20px; position: relative; }
+  .navbar__hamburger { display: block; }
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 72px; left: 0; right: 0;
+    flex-direction: column;
+    background: rgba(232,243,250,0.98);
+    backdrop-filter: blur(12px);
+    padding: 8px 0 16px;
+    border-bottom: 1px solid rgba(210,235,250,0.9);
+    z-index: 99;
+    gap: 0;
+  }
+  .navbar__links--open { display: flex; }
+  .navbar__links li { border-bottom: 1px solid rgba(210,235,250,0.6); }
+  .navbar__links li:last-child { border-bottom: none; }
+  .navbar__links a { display: block; padding: 14px 24px; font-size: 15px; }
+
+  /* — Hero — */
+  .hero { padding: 12px; }
+  .hero__card { padding: 24px 20px; min-height: auto; }
+  .hero__top { margin-bottom: 24px; }
+  .hero__pagination { display: none; }
+  .hero__badge { font-size: 11px; padding: 6px 12px; }
+  .hero__heading { font-size: 34px; letter-spacing: -1.5px; margin-bottom: 14px; }
+  .hero__pill-desc { font-size: 13px; margin-bottom: 16px; }
+  .hero__pills { gap: 8px; }
+  .hero__pill { padding: 7px 14px; font-size: 12px; }
+  .hero__main { flex-direction: column; gap: 20px; }
+  .hero__right { align-items: flex-start; width: 100%; }
+  .hero__description { display: none; }
+  .hero__doctor-card { min-width: unset; width: 100%; }
+
+  /* — Research — */
+  .research { padding: 48px 20px; }
+  .research__header { flex-direction: column; gap: 20px; }
+  .research__cards { flex-direction: column; }
+  .research__card { flex: none; height: 240px; }
+
+  /* — About — */
+  .about { flex-direction: column; padding: 48px 20px; gap: 32px; }
+  .about__photo { flex: none; width: 100%; min-height: 340px; }
+  .about__photo-placeholder { min-height: 340px; font-size: 64px; }
+  .about__carousel-img { object-position: center 15%; }
+  .about__title { font-size: 28px; letter-spacing: -1px; }
+
+  /* — Stats — */
+  .stats { flex-wrap: wrap; }
+  .stats__item {
+    flex: 0 0 50%;
+    padding: 32px 16px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .stats__item:nth-child(odd)  { border-right: 1px solid rgba(255,255,255,0.08); }
+  .stats__item:nth-last-child(-n+2) { border-bottom: none; }
+
+  /* — Publications — */
+  .publications { padding: 48px 20px; }
+  .publications__header { flex-direction: column; gap: 16px; }
+  .publication__item { padding: 18px 20px; }
+
+  /* — Patents — */
+  .patents { padding: 48px 20px; }
+  .patents__grid { grid-template-columns: 1fr; }
+
+  /* — Presentations — */
+  .presentations__banner { height: 260px; padding: 24px 20px; }
+  .presentations__banner-content { flex-direction: column; align-items: flex-start; gap: 0; }
+  .presentations__banner-photo { display: none; }
+  .presentations__body { padding: 32px 20px 48px; }
+  .presentations__grid { grid-template-columns: 1fr; }
+
+  /* — Contact — */
+  .contact { flex-direction: column; padding: 48px 20px; gap: 40px; }
+  .contact__form-row { flex-direction: column; gap: 14px; }
+  .contact__title { font-size: 28px; }
+
+  /* — Footer — */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 28px 20px;
+    text-align: center;
+  }
+  .footer__links { justify-content: center; flex-wrap: wrap; gap: 16px; }
+}
+
+/* ============================================================
+   SMALL MOBILE  ≤ 480px
+   ============================================================ */
+@media (max-width: 480px) {
+  .hero__heading { font-size: 28px; }
+  .hero__card { padding: 20px 16px; }
+  .section__title { font-size: 24px; letter-spacing: -0.5px; }
+  .about__title { font-size: 24px; }
+  .contact__title { font-size: 24px; }
+  .stats__number { font-size: 36px; }
+  .publication__number { font-size: 20px; }
+}
