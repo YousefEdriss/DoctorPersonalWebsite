@@ -61,7 +61,7 @@ export default function Hero() {
             <div className="hero__doctor-card">
               <div className="hero__doctor-avatar">
                 <img
-                  src="/images/portrait.jpg"
+                  src="/images/7.png"
                   alt="Dr. Nuha Alekhmimi"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none'

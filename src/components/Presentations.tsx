@@ -74,29 +74,58 @@ const presentations = [
 export default function Presentations() {
   return (
     <section id="presentations" className="presentations">
-      <p className="section__eyebrow">Global Reach /</p>
-      <h2 className="section__title">Presentations &amp;<br />Conferences</h2>
 
-      <div className="presentations__grid">
-        {presentations.map((p, i) => (
-          <div
-            key={i}
-            className={`presentation__item${p.award ? ' presentation__item--award' : ''}`}
-          >
-            <div className="presentation__date">
-              <div className="presentation__date-year">{p.year}</div>
-              <div className="presentation__date-month">{p.month}</div>
-            </div>
-            <div className="presentation__content">
-              <h4>{p.title}</h4>
-              <div className="presentation__venue">{p.venue}</div>
-              {p.award && (
-                <div className="presentation__award">🏆 {p.award}</div>
-              )}
-            </div>
+      {/* Full-width banner with 6.png background */}
+      <div
+        className="presentations__banner"
+        style={{ backgroundImage: `url('/images/6.png')` }}
+      >
+        <div className="presentations__banner-content">
+          <div className="presentations__banner-left">
+            <p className="section__eyebrow">Global Reach /</p>
+            <h2 className="section__title">
+              Presentations &amp;<br />Conferences
+            </h2>
+            <p className="presentations__banner-caption">
+              15+ international conferences across 5 continents
+            </p>
           </div>
-        ))}
+
+          {/* Singapore conference photo — Best Presenter */}
+          <div>
+            <div className="presentations__banner-photo">
+              <img src="/images/2.jpeg" alt="Dr. Nuha presenting at international conference" />
+            </div>
+            <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '11px', fontWeight: 600, textAlign: 'center', marginTop: '48px', letterSpacing: '0.5px' }}>
+              🏆 Best Presenter — Singapore 2024
+            </p>
+          </div>
+        </div>
       </div>
+
+      <div className="presentations__body">
+        <div className="presentations__grid">
+          {presentations.map((p, i) => (
+            <div
+              key={i}
+              className={`presentation__item${p.award ? ' presentation__item--award' : ''}`}
+            >
+              <div className="presentation__date">
+                <div className="presentation__date-year">{p.year}</div>
+                <div className="presentation__date-month">{p.month}</div>
+              </div>
+              <div className="presentation__content">
+                <h4>{p.title}</h4>
+                <div className="presentation__venue">{p.venue}</div>
+                {p.award && (
+                  <div className="presentation__award">🏆 {p.award}</div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </section>
   )
 }

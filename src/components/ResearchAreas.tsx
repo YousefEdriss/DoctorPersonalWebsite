@@ -3,22 +3,22 @@ const areas = [
     title: 'Biosensors',
     desc: 'Paper-based & electrochemical biosensors for rapid disease detection',
     icon: '🔬',
-    bg: '/images/research-biosensor.jpg',
-    gradient: 'linear-gradient(135deg,#1B6FB5,#0D3B66)',
+    bg: '/images/5.png',
+    gradient: 'linear-gradient(135deg,rgba(27,111,181,0.75),rgba(13,59,102,0.80))',
   },
   {
     title: 'ALI / ARDS Research',
     desc: 'Alveolar macrophage & CD4 roles in Acute Lung Injury diagnostics',
     icon: '🫁',
-    bg: '/images/research-ards.jpg',
-    gradient: 'linear-gradient(135deg,#006994,#00A8CC)',
+    bg: '/images/6.png',
+    gradient: 'linear-gradient(135deg,rgba(0,105,148,0.72),rgba(0,168,204,0.65))',
   },
   {
     title: 'Sepsis Detection',
     desc: 'MMP-9 biomarker platforms for early sepsis identification in vivo',
     icon: '🧬',
-    bg: '/images/research-sepsis.jpg',
-    gradient: 'linear-gradient(135deg,#0D3B66,#1B6FB5)',
+    bg: '/images/4.png',
+    gradient: 'linear-gradient(135deg,rgba(13,59,102,0.78),rgba(27,111,181,0.70))',
   },
 ]
 
