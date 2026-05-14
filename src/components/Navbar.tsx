@@ -7,8 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <a href="#home" className="navbar__logo" onClick={close}>
-        <div className="navbar__logo-icon">N</div>
-        <span>Dr. Nuha <span className="navbar__logo-sub">Alekhmimi</span></span>
+        <img src="/images/10.png" alt="Noor Biotech GmbH Logo" className="navbar__logo-img" />
       </a>
 
       <ul className={`navbar__links${open ? ' navbar__links--open' : ''}`}>
