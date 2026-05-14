@@ -22,22 +22,6 @@ export default function About() {
       <div className="about__photo">
         <img src="/images/1.jpeg" alt="Dr. Nuha Alekhmimi in the laboratory" />
         <div className="about__photo-placeholder">🔬</div>
-
-        {/* PhD graduation overlay card */}
-        <div className="about__photo-overlay">
-          <img
-            className="about__photo-overlay-img"
-            src="/images/4.png"
-            alt="PhD graduation Friedrich Schiller University Jena 2024"
-          />
-          <div className="about__photo-overlay-text">
-            <div className="about__photo-overlay-label">Doctorate</div>
-            <div className="about__photo-overlay-title">
-              Friedrich Schiller University Jena
-            </div>
-            <div className="about__photo-overlay-year">PhD — 2024</div>
-          </div>
-        </div>
       </div>
 
       <div className="about__content">

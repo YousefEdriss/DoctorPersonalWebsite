@@ -1,19 +1,48 @@
 import { useState } from 'react'
 
 const pills = [
-  'Biosensors',
-  'ALI / ARDS Research',
-  'Sepsis Detection',
-  'Molecular Biology',
-  'Clinical Laboratory',
+  {
+    label: 'Biosensors',
+    image: '/images/5.png',
+    desc: 'Developing paper-based and electrochemical biosensors for rapid, low-cost detection of infectious diseases and critical biomarkers.',
+  },
+  {
+    label: 'ALI / ARDS Research',
+    image: '/images/6.jpeg',
+    desc: 'Investigating the role of alveolar macrophages and CD4 in Acute Lung Injury to advance early diagnosis and targeted treatment.',
+  },
+  {
+    label: 'Sepsis Detection',
+    image: '/images/4.png',
+    desc: 'Engineering MMP-9 biomarker sensing platforms for early, accurate sepsis identification — validated in murine models.',
+  },
+  {
+    label: 'Molecular Biology',
+    image: '/images/1.jpeg',
+    desc: 'Applying in vivo imaging and multiplexing platforms to track disease progression at the molecular level.',
+  },
+  {
+    label: 'Clinical Laboratory',
+    image: '/images/7.png',
+    desc: 'Over 15 years of clinical laboratory expertise spanning microbiology, cell biology, and translational research.',
+  },
 ]
 
 export default function Hero() {
-  const [activepill, setActivePill] = useState(0)
+  const [active, setActive] = useState(0)
 
   return (
     <section id="home" className="hero">
       <div className="hero__card">
+
+        {/* Animated background image */}
+        <div
+          key={active}
+          className="hero__card-bg"
+          style={{ backgroundImage: `url('${pills[active].image}')` }}
+        />
+        {/* Gradient overlay */}
+        <div className="hero__card-gradient" />
 
         {/* Top row */}
         <div className="hero__top">
@@ -39,14 +68,20 @@ export default function Hero() {
               Research<br />
               With Care.
             </h1>
+
+            {/* Brief description for active pill */}
+            <p key={`desc-${active}`} className="hero__pill-desc">
+              {pills[active].desc}
+            </p>
+
             <div className="hero__pills">
               {pills.map((p, i) => (
                 <button
-                  key={p}
-                  className={`hero__pill${activepill === i ? ' hero__pill--active' : ''}`}
-                  onClick={() => setActivePill(i)}
+                  key={p.label}
+                  className={`hero__pill${active === i ? ' hero__pill--active' : ''}`}
+                  onClick={() => setActive(i)}
                 >
-                  {p}
+                  {p.label}
                 </button>
               ))}
             </div>
@@ -63,9 +98,7 @@ export default function Hero() {
                 <img
                   src="/images/7.png"
                   alt="Dr. Nuha Alekhmimi"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none'
-                  }}
+                  onError={(e) => { e.currentTarget.style.display = 'none' }}
                 />
                 N
               </div>

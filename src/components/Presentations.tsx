@@ -78,7 +78,7 @@ export default function Presentations() {
       {/* Full-width banner with 6.png background */}
       <div
         className="presentations__banner"
-        style={{ backgroundImage: `url('/images/6.png')` }}
+        style={{ backgroundImage: `url('/images/6.jpeg')` }}
       >
         <div className="presentations__banner-content">
           <div className="presentations__banner-left">

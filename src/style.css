@@ -115,14 +115,39 @@ ul { list-style: none; }
   border-radius: 28px;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, rgba(13,27,42,0.82) 0%, rgba(27,111,181,0.60) 55%, rgba(0,168,204,0.40) 100%),
-    url('/images/5.png') center/cover no-repeat;
   background-color: #0D3B66;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 48px;
   min-height: 580px;
+}
+
+.hero__card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 15%;
+  animation: bgFadeIn 0.55s ease;
+  z-index: 0;
+}
+
+.hero__card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13,27,42,0.84) 0%, rgba(27,111,181,0.62) 55%, rgba(0,168,204,0.42) 100%);
+  z-index: 1;
+}
+
+@keyframes bgFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.hero__top,
+.hero__main {
+  position: relative;
+  z-index: 2;
 }
 
 .hero__top {
@@ -197,6 +222,15 @@ ul { list-style: none; }
   color: white;
   text-transform: uppercase;
   margin-bottom: 28px;
+}
+
+.hero__pill-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 480px;
+  animation: bgFadeIn 0.4s ease;
 }
 
 .hero__pills {

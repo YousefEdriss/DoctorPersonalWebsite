@@ -10,7 +10,7 @@ const areas = [
     title: 'ALI / ARDS Research',
     desc: 'Alveolar macrophage & CD4 roles in Acute Lung Injury diagnostics',
     icon: '🫁',
-    bg: '/images/6.png',
+    bg: '/images/6.jpeg',
     gradient: 'linear-gradient(135deg,rgba(0,105,148,0.72),rgba(0,168,204,0.65))',
   },
   {
@@ -63,8 +63,6 @@ export default function ResearchAreas() {
               style={{ backgroundImage: `${area.gradient}, url('${area.bg}')` }}
             />
             <div className="research__card-overlay" />
-            <button className="research__card-nav research__card-nav--left">‹</button>
-            <button className="research__card-nav research__card-nav--right">›</button>
             <div className="research__card-label">
               <div className="research__card-icon">{area.icon}</div>
               <h3>{area.title}</h3>
