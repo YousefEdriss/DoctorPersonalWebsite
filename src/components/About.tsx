@@ -6,6 +6,8 @@ const carouselImages = [
   { src: '/images/4.png',  alt: 'PhD graduation — Friedrich Schiller University Jena 2024' },
   { src: '/images/5.png',  alt: 'Dr. Nuha working in research laboratory' },
   { src: '/images/7.png',  alt: 'Dr. Nuha Alekhmimi portrait' },
+  { src: '/images/8.jpeg', alt: 'Dr. Nuha Alekhmimi' },
+  { src: '/images/9.jpeg', alt: 'Dr. Nuha Alekhmimi' },
 ]
 
 const positions = [
@@ -89,21 +91,13 @@ export default function About() {
         </h2>
 
         <p className="about__text">
-          Dr. Nuha Khalid Alekhmimi is a distinguished biomedical researcher and the
-          <strong> Founder of Noor Biotech GmbH</strong>. Holding a PhD from Friedrich
-          Schiller University Jena, Germany (2024), she has spent over 15 years advancing
-          biosensing technologies for critical diseases including ALI/ARDS and Sepsis.
-        </p>
-        <p className="about__text">
-          Her pioneering work spans paper-based assays, multiplexing sensing platforms,
-          and in&nbsp;vivo MMP imaging techniques. Awarded <em>Best Presenter</em> at the
-          1st International Conference on AI Sensors in Singapore (2024), Dr. Nuha brings
-          world-class expertise to every scientific endeavour.
-        </p>
-        <p className="about__text">
-          With 9+ publications, 4 international patents, and presentations across 5
-          continents, she continues to bridge the gap between cutting-edge research and
-          clinical application.
+          Dr. Nuha Alekhmimi completed her PhD at FSU Jena University, Germany. She is an
+          assistant professor in the Clinical and Laboratory Sciences Department, Inaya Medical
+          College, Riyadh, KSA, and <strong>Founder of Noor Biotech GmbH</strong>, Switzerland.
+          She has over 4 Patents in national and international PCT offices and 9 publications.
+          Throughout her career, she has served as an academic and cell biologist researcher
+          in the fields of medical and biotechnology research, providing leadership in the
+          scientific community.
         </p>
 
         <a href="#publications" className="about__read-more">
