@@ -1,3 +1,13 @@
+import { useState, useEffect, useCallback } from 'react'
+
+const carouselImages = [
+  { src: '/images/1.jpeg', alt: 'Dr. Nuha Alekhmimi in the laboratory' },
+  { src: '/images/2.jpeg', alt: 'Dr. Nuha presenting at international conference' },
+  { src: '/images/4.png',  alt: 'PhD graduation — Friedrich Schiller University Jena 2024' },
+  { src: '/images/5.png',  alt: 'Dr. Nuha working in research laboratory' },
+  { src: '/images/7.png',  alt: 'Dr. Nuha Alekhmimi portrait' },
+]
+
 const positions = [
   {
     icon: '🏢',
@@ -17,13 +27,58 @@ const positions = [
 ]
 
 export default function About() {
+  const [current, setCurrent] = useState(0)
+  const [resetKey, setResetKey] = useState(0)
+
+  const advance = useCallback(() => {
+    setCurrent(prev => (prev + 1) % carouselImages.length)
+  }, [])
+
+  // Auto-advance every 10 s; restarts whenever resetKey changes (manual nav)
+  useEffect(() => {
+    const timer = setInterval(advance, 10000)
+    return () => clearInterval(timer)
+  }, [advance, resetKey])
+
+  const handleNext = () => {
+    setCurrent(prev => (prev + 1) % carouselImages.length)
+    setResetKey(k => k + 1)
+  }
+
   return (
     <section id="about" className="about">
+
+      {/* ── Carousel ── */}
       <div className="about__photo">
-        <img src="/images/1.jpeg" alt="Dr. Nuha Alekhmimi in the laboratory" />
+        {/* Fallback background */}
         <div className="about__photo-placeholder">🔬</div>
+
+        {/* All images stacked; only active one is visible */}
+        {carouselImages.map((img, i) => (
+          <img
+            key={img.src}
+            src={img.src}
+            alt={img.alt}
+            className={`about__carousel-img${i === current ? ' about__carousel-img--active' : ''}`}
+          />
+        ))}
+
+        {/* Dots + forward button */}
+        <div className="about__carousel-controls">
+          <div className="about__carousel-dots">
+            {carouselImages.map((_, i) => (
+              <span
+                key={i}
+                className={`about__carousel-dot${i === current ? ' about__carousel-dot--active' : ''}`}
+                onClick={() => { setCurrent(i); setResetKey(k => k + 1) }}
+              />
+            ))}
+          </div>
+          <button className="about__carousel-btn" onClick={handleNext}>›</button>
+        </div>
       </div>
 
+      {/* ── Text content ── */}
       <div className="about__content">
         <p className="about__eyebrow">About Dr. Nuha /</p>
         <h2 className="about__title">
@@ -67,6 +122,7 @@ export default function About() {
           ))}
         </div>
       </div>
+
     </section>
   )
 }
