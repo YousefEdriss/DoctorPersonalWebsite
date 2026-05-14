@@ -26,13 +26,6 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact__detail">
-            <div className="contact__detail-icon">📱</div>
-            <div>
-              <div className="contact__detail-label">Phone</div>
-              <div className="contact__detail-value">+966 531 548 394</div>
-            </div>
-          </div>
-          <div className="contact__detail">
             <div className="contact__detail-icon">📍</div>
             <div>
               <div className="contact__detail-label">Location</div>
