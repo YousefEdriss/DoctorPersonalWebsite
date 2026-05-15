@@ -4,8 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__logo">
-        <div className="footer__logo-icon">N</div>
-        <span>Noor Biotech GmbH</span>
+        <img src="/images/10.png" alt="Noor Biotech GmbH Logo" className="footer__logo-img" />
       </div>
 
       <p className="footer__copyright">

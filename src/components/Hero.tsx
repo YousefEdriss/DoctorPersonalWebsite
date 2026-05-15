@@ -100,7 +100,6 @@ export default function Hero() {
                   alt="Dr. Nuha Alekhmimi"
                   onError={(e) => { e.currentTarget.style.display = 'none' }}
                 />
-                N
               </div>
               <div className="hero__doctor-info">
                 <h4>Dr. Nuha K. Alekhmimi</h4>
