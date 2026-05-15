@@ -50,10 +50,11 @@ ul { list-style: none; }
 }
 
 .navbar__logo-img {
-  height: 70px;
+  height: 78px;
   width: auto;
-  max-width: 200px;
+  max-width: 220px;
   object-fit: contain;
+  display: block;
 }
 
 .navbar__logo-sub { color: #1B6FB5; }
@@ -1109,7 +1110,7 @@ ul { list-style: none; }
 
   /* — Navbar — */
   .navbar { padding: 0 20px; position: relative; height: 90px; }
-  .navbar__logo-img { height: 65px; max-width: 160px; }
+  .navbar__logo-img { height: 72px; max-width: 180px; display: block; }
   .navbar__hamburger { display: block; }
   .navbar__links {
     display: none;
