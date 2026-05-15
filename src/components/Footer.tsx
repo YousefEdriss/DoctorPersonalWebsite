@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__logo">
-        <img src="/images/10.png" alt="Noor Biotech GmbH Logo" className="footer__logo-img" />
+        <img src="/images/11.png" alt="Dr. Nuha Khaled Logo" className="footer__logo-img" />
       </div>
 
       <p className="footer__copyright">
