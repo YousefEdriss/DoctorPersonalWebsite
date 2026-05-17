@@ -54,7 +54,7 @@ export default function Hero() {
             <span>05 →</span>
           </div>
           <div className="hero__badge">
-            <span className="hero__badge-dot" />
+            <img src="/images/12.png" alt="Noor Biotech GmbH" className="hero__badge-logo" />
             Founder — Noor Biotech GmbH
           </div>
         </div>

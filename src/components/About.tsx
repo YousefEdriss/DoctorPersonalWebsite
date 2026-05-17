@@ -100,6 +100,16 @@ export default function About() {
           scientific community.
         </p>
 
+        {/* ── Noor Biotech founder card ── */}
+        <div className="about__founder-card">
+          <img src="/images/12.png" alt="Noor Biotech GmbH" className="about__founder-logo" />
+          <div className="about__founder-info">
+            <div className="about__founder-role">Founder & CEO</div>
+            <div className="about__founder-company">Noor Biotech GmbH</div>
+            <div className="about__founder-sub">Switzerland · Pioneering Biomedical Innovation</div>
+          </div>
+        </div>
+
         <a href="#publications" className="about__read-more">
           View Publications →
         </a>
