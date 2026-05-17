@@ -90,7 +90,7 @@ export default function About() {
         <p className="about__text">
           Dr. Nuha Alekhmimi completed her PhD at FSU Jena University, Germany. She is an
           assistant professor in the Clinical and Laboratory Sciences Department, Inaya Medical
-          College, Riyadh, KSA, and <strong>Founder of Noor Biotech GmbH</strong>.
+          College, Riyadh, KSA, and <strong>Founder of Noor Biotech GmbH</strong>, Switzerland.
           She has over 4 Patents in national and international PCT offices and 9 publications.
           Throughout her career, she has served as an academic and cell biologist researcher
           in the fields of medical and biotechnology research, providing leadership in the
@@ -103,7 +103,8 @@ export default function About() {
           <div className="about__founder-info">
             <div className="about__founder-role">Founder & CEO</div>
             <div className="about__founder-company">Noor Biotech GmbH</div>
-            </div>
+            <div className="about__founder-sub">Switzerland · Pioneering Biomedical Innovation</div>
+          </div>
         </div>
 
         <a href="#publications" className="about__read-more">
