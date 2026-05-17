@@ -179,23 +179,23 @@ ul { list-style: none; }
 .hero__badge {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255,255,255,0.22);
   border-radius: 50px;
-  padding: 8px 18px;
+  padding: 6px 18px 6px 6px;
   color: white;
   font-size: 13px;
   font-weight: 600;
 }
 .hero__badge-logo {
-  height: 28px;
-  width: 28px;
+  height: 48px;
+  width: 48px;
   object-fit: contain;
   border-radius: 50%;
   background: white;
-  padding: 2px;
+  padding: 4px;
   flex-shrink: 0;
 }
 .hero__badge-dot {
