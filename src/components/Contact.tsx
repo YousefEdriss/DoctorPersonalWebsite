@@ -33,7 +33,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact__detail">
-            <div className="contact__detail-icon">🏢</div>
+            <img src="/images/13.jpeg" alt="Inaya Medical Colleges" className="contact__detail-logo" />
             <div>
               <div className="contact__detail-label">Institution</div>
               <div className="contact__detail-value">Inaya Medical Colleges</div>
