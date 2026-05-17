@@ -12,17 +12,14 @@ const carouselImages = [
 
 const positions = [
   {
-    icon: '🏢',
-    title: 'Founder & CEO',
-    org: 'Noor Biotech GmbH',
-  },
-  {
-    icon: '🎓',
+    logo: '/images/13.jpeg',
+    alt: 'Inaya Medical Colleges',
     title: 'Assistant Professor — Cell Biology & Clinical Laboratory Sciences',
     org: 'Inaya Medical Colleges, Riyadh, KSA (2021 – Present)',
   },
   {
-    icon: '💼',
+    logo: '/images/14.webp',
+    alt: 'Al-Arfaj Medical Services',
     title: 'Part-Time Consultant & Business Developer',
     org: 'Alarfaj Medical Services Co., Riyadh (2021 – Present)',
   },
@@ -106,8 +103,7 @@ export default function About() {
           <div className="about__founder-info">
             <div className="about__founder-role">Founder & CEO</div>
             <div className="about__founder-company">Noor Biotech GmbH</div>
-            <div className="about__founder-sub">Switzerland · Pioneering Biomedical Innovation</div>
-          </div>
+            </div>
         </div>
 
         <a href="#publications" className="about__read-more">
@@ -117,7 +113,7 @@ export default function About() {
         <div className="about__positions">
           {positions.map((pos) => (
             <div key={pos.title} className="about__position">
-              <span className="about__position-icon">{pos.icon}</span>
+              <img src={pos.logo} alt={pos.alt} className="about__position-logo" />
               <div>
                 <div className="about__position-title">{pos.title}</div>
                 <div className="about__position-org">{pos.org}</div>
