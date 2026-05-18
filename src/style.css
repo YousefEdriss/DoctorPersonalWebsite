@@ -833,6 +833,13 @@ ul { list-style: none; }
   box-shadow: 0 8px 32px rgba(27,111,181,0.15);
   transform: translateY(-3px);
 }
+.patent__video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 16px;
+  max-height: 280px;
+  background: #000;
+}
 .patent__icon { font-size: 32px; margin-bottom: 16px; }
 .patent__num {
   font-size: 11px;

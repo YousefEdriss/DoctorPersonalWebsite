@@ -1,4 +1,12 @@
-const patents = [
+type Patent = {
+  icon: string
+  num: string
+  title: string
+  jurisdictions: string[]
+  video?: string
+}
+
+const patents: Patent[] = [
   {
     icon: '🫁',
     num: 'Patent 01',
@@ -10,6 +18,7 @@ const patents = [
     num: 'Patent 02',
     title: 'An Automated System for Microbial Testing',
     jurisdictions: ['US', 'Europe'],
+    video: '/images/16.mp4',
   },
   {
     icon: '🔬',
@@ -42,6 +51,16 @@ export default function Patents() {
                 <span key={j} className="patent__jurisdiction-tag">{j}</span>
               ))}
             </div>
+            {patent.video && (
+              <video
+                className="patent__video"
+                controls
+                preload="none"
+                playsInline
+              >
+                <source src={patent.video} type="video/mp4" />
+              </video>
+            )}
           </div>
         ))}
       </div>
