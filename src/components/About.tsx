@@ -22,6 +22,12 @@ const positions = [
     title: 'Part-Time Consultant & Business Developer',
     org: 'Alarfaj Medical Services Co., Riyadh (2021 – Present)',
   },
+  {
+    logo: '/images/4.png',
+    alt: 'PhD — FSU Jena',
+    title: 'Doctor of Philosophy (PhD)',
+    org: 'Friedrich Schiller University Jena, Germany (2024)',
+  },
 ]
 
 export default function About() {
@@ -106,10 +112,6 @@ export default function About() {
           </div>
         </div>
 
-        <a href="#publications" className="about__read-more">
-          View Publications →
-        </a>
-
         <div className="about__positions">
           {positions.map((pos) => (
             <div key={pos.title} className="about__position">
@@ -121,6 +123,10 @@ export default function About() {
             </div>
           ))}
         </div>
+
+        <a href="#publications" className="about__read-more">
+          View Publications →
+        </a>
       </div>
 
     </section>
