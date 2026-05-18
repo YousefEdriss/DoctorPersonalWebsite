@@ -96,7 +96,7 @@ export default function About() {
           Dr. Nuha Alekhmimi completed her PhD at FSU Jena University, Germany. She is an
           assistant professor in the Clinical and Laboratory Sciences Department, Inaya Medical
           College, Riyadh, KSA, and <strong>Founder of Noor Biotech GmbH</strong>, Switzerland.
-          She has over 4 Patents in national and international PCT offices and 9 publications.
+          She has over 4 Patents in national and international PCT offices and 10 publications.
           Throughout her career, she has served as an academic and cell biologist researcher
           in the fields of medical and biotechnology research, providing leadership in the
           scientific community.

@@ -42,15 +42,10 @@ export default function ResearchAreas() {
             diagnostics for life-threatening diseases.
           </p>
           <div className="research__reviews">
-            <div className="research__review-avatars">
-              {['N', 'J', 'M'].map((l) => (
-                <div key={l} className="research__review-avatar">{l}</div>
-              ))}
-            </div>
-            <div>
-              <div className="research__review-count">9+</div>
+            <a href="#publications" className="research__review-link">
+              <div className="research__review-count">10</div>
               <div className="research__review-label">Publications</div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

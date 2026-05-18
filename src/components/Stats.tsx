@@ -1,5 +1,5 @@
 const items = [
-  { number: '9', suffix: '+', label: 'Publications' },
+  { number: '10', suffix: '', label: 'Publications' },
   { number: '4', suffix: '', label: 'Patents Filed' },
   { number: '15', suffix: '+', label: 'International Conferences' },
   { number: '1', suffix: 'st', label: 'Prize – Alfaisal 2020' },

@@ -372,24 +372,13 @@ ul { list-style: none; }
   gap: 12px;
   margin-top: 20px;
 }
-.research__review-avatars {
+.research__review-link {
   display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: opacity 0.2s;
 }
-.research__review-avatar {
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background: linear-gradient(135deg, #1B6FB5, #00A8CC);
-  margin-left: -8px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 11px;
-  font-weight: 700;
-}
-.research__review-avatar:first-child { margin-left: 0; }
+.research__review-link:hover { opacity: 0.75; }
 
 .research__review-count {
   font-size: 20px;
