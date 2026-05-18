@@ -17,7 +17,7 @@ const areas = [
     title: 'Sepsis Detection',
     desc: 'MMP-9 biomarker platforms for early sepsis identification in vivo',
     icon: '🧬',
-    bg: '/images/2.jpeg',
+    bg: '/images/4.png',
     gradient: 'linear-gradient(135deg,rgba(13,59,102,0.78),rgba(27,111,181,0.70))',
   },
 ]

@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react'
 const carouselImages = [
   { src: '/images/1.jpeg', alt: 'Dr. Nuha Alekhmimi in the laboratory' },
   { src: '/images/2.jpeg', alt: 'Dr. Nuha presenting at international conference' },
+  { src: '/images/4.png',  alt: 'PhD graduation — Friedrich Schiller University Jena 2024' },
   { src: '/images/5.png',  alt: 'Dr. Nuha working in research laboratory' },
   { src: '/images/7.png',  alt: 'Dr. Nuha Alekhmimi portrait' },
   { src: '/images/8.jpeg', alt: 'Dr. Nuha Alekhmimi' },

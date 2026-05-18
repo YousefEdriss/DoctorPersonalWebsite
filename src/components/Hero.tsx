@@ -13,7 +13,7 @@ const pills = [
   },
   {
     label: 'Sepsis Detection',
-    image: '/images/2.jpeg',
+    image: '/images/4.png',
     desc: 'Engineering MMP-9 biomarker sensing platforms for early, accurate sepsis identification — validated in murine models.',
   },
   {
