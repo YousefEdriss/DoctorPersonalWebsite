@@ -23,8 +23,8 @@ const positions = [
     org: 'Alarfaj Medical Services Co., Riyadh (2021 – Present)',
   },
   {
-    logo: '/images/4.png',
-    alt: 'PhD — FSU Jena',
+    logo: '/images/15.png',
+    alt: 'Friedrich Schiller University Jena',
     title: 'Doctor of Philosophy (PhD)',
     org: 'Friedrich Schiller University Jena, Germany (2024)',
   },
